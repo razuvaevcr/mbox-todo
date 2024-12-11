@@ -1,0 +1,39 @@
+@use '../../styles/variables' as *;
+
+
+.add-todo {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  align-items: center;
+
+  input {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid $main-outline;
+    border-radius: 8px;
+    margin-right: 10px;
+    transition: all 0.2s ease-in-out;
+
+    &:focus {
+      border-color: $main-green;
+      outline: none;
+    }
+  }
+
+  button {
+    padding: 12px 20px;
+    width: 18%;
+    background-color: $main-green;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $main-green;
+    }
+  }
+}
